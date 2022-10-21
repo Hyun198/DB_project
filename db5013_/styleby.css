@@ -1,0 +1,54 @@
+*{
+    list-style: none;
+}
+
+
+.wrap >h1 {
+  text-align:center;
+}
+
+.intro{
+    display: flex;
+    justify-content: flex-end;
+    width: calc(1280px-300px);
+    height: 86px;
+    margin:auto;
+   
+    
+  }
+label.title{
+    font-weight: bold;
+    width:80px;
+    float: left;
+  }
+
+  .container{
+    width:600px;
+    margin:0 auto;
+    
+    padding-top: 200px;
+  }
+
+  .container > h1{
+      text-align: center;
+  }
+
+  .centered{
+      text-align:center;
+  }
+
+  fieldset {
+      margin: 15px 10px;  /*상하 마진 15 좌우 마진 10*/
+      background-color: white;
+  }
+
+  fieldset legend{
+      font-weight: bold;
+      font-size: 18px;
+      color:blue;
+  }
+
+  ul li{
+      margin-bottom:  10px;
+      
+  }

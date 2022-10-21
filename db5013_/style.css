@@ -1,0 +1,73 @@
+.wrap >h1 {
+  text-align:center;
+}
+.intro_bg{
+  background-image:url("image/food-delivery.png");
+  background:cover;
+  width:100%;
+  height: 1000px;
+  
+}
+.wrap2{
+    width:600px;
+    margin:0 auto;
+    background-color: white;
+    padding-top: 300px;
+}
+
+.button_ch{
+  text-align: center;
+}
+
+
+
+form fieldset {
+  background-color: skyblue;
+  margin: auto 500px auto 500px;
+  padding:5%;
+}
+
+form legend {
+  font-size: 18px;
+  color: #0066ff;
+  font-weight: 600;
+  text-align: center;
+}
+
+form label.reg {
+  font-size: 14px;
+  width: 120px;
+  float: left;
+}
+
+form label.my{
+  font-size: 14px;
+  width: 120px;
+  float: left;
+}
+
+form label em {
+  font-size: 15px;
+  color: red;
+  font-weight: 800;
+}
+
+form ul li {
+  list-style: none;
+}
+
+.sendform {
+  text-align: center;
+}
+
+.login_setting > form{
+  
+   font-size: larger;
+   margin: auto 500px auto 500px;
+   padding-top: 10%;
+   float: left;
+}
+
+
+
+

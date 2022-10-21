@@ -1,0 +1,90 @@
+/*----------------rest-chicken------------------*/
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin:0px;
+    padding:0px;
+    color:black;
+  
+  }
+
+.intro_chicken{
+    display:flex;
+    background-color:skyblue;
+    padding: 10px;
+    margin: 40px;
+    
+  }
+  
+  .intro_chicken >ul >li{
+    flex: 1;
+    text-align: center;
+    width:200px;
+    padding:10px;
+    background-color: green;
+    border-radius: 7px;
+    margin:30px;
+    color: white;
+  }
+
+
+
+  .intro_pizza{
+    display:flex;
+    background-color:skyblue;
+    padding: 10px;
+    margin: 40px;
+  }
+
+  .intro_pizza >ul >li{
+    flex: 1;
+    text-align: center;
+    width:200px;
+    padding:10px;
+    background-color: green;
+    border-radius: 7px;
+    margin:30px;
+    color: white;
+  }
+
+
+ .intro_hambugar{
+    display:flex;
+    background-color:skyblue;
+    padding: 10px;
+    margin: 40px;
+ }
+
+ .intro_hambugar >ul >li{
+    flex: 1;
+    text-align: center;
+    width:200px;
+    padding:10px;
+    background-color: green;
+    border-radius: 7px;
+    margin:30px;
+    color: white;
+  }
+
+  .intro_cafe{
+    display:flex;
+    background-color:skyblue;
+    padding: 10px;
+    margin: 40px;
+ }
+
+ .intro_cafe >ul >li{
+    flex: 1;
+    text-align: center;
+    width:200px;
+    padding:10px;
+    background-color: green;
+    border-radius: 7px;
+    margin:30px;
+    color: white;
+  }
+
+  .h1 {
+    text-align: center;
+  }

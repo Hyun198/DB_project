@@ -1,0 +1,10 @@
+.nav{
+    line-height: 86px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+  }
+  a:hover {
+    color:#fff;
+    background: #111;
+}

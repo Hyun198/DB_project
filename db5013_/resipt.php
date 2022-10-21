@@ -1,0 +1,99 @@
+
+<?php
+        header("Content-Type:text/html;charset=utf-8");
+        session_start();
+        error_reporting(E_ALL);
+        ini_set("display_errors",1);
+
+       
+        
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+    
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="styleresipt.css">
+<link rel="stylesheet" type="text/css" href="stylenav.css">
+
+
+</head>
+<script type="text/javascript">
+  var sum = 0;
+  function calc(cBox) {
+    if(cBox.checked)
+      sum += parseInt(cBox.value);
+    else
+      sum -= parseInt(cBox.value);
+    document.getElementById("sumtext").value = sum;
+  }
+</script>
+<?php
+    $name=$_GET['name'];
+    $db='(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=203.249.87.57)(PORT=1521)))(CONNECT_DATA=(SID=orcl)))';
+    $dbusername='db501group3';
+    $dbpassword='test1234';
+
+$connect=oci_connect($dbusername,$dbpassword,$db);
+if(!$connect)
+{
+        $e=oci_error();
+        trigger_error(htmlentities($e['message'],ENT_QUOTES),E_USER_ERROR);
+
+}
+else
+{
+
+        $sql="select MENU_NAME,PRICE from MENU a , RESTAURANT b where a.REST_ID_M = b.REST_ID and b.RESTAURANT_NAME='$name'";
+        $stid=oci_parse($connect,$sql);
+
+        oci_execute($stid);
+        
+
+}
+
+    
+?>
+<body>
+
+    <div class="wrap">
+         <h1>Delivery Service</h1>
+        </div>
+        <div class="nav">
+              <a href="./home.php">HOME</a>
+              </div>
+ <div class="container">
+ 
+<?php
+echo "<h1>$name</h1>"
+?>
+<form method="get" action="payment.php">
+  <fieldset>
+      <legend>주문정보</legend>
+      <ul>
+      <?php
+        while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS))
+        {
+            echo "<li>";
+            echo "<label><input type='checkbox' name=product value={$row['MENU_NAME']} onclick='calc(this)'>가격:{$row['PRICE']}</label>";
+            echo "</li>";
+        }
+      ?>
+      </ul>
+      지불하실 금액 <input type="text" id="sumtext" value="0">
+  </fieldset>
+
+  <div class="centered">
+      <input type="submit" value="주문하기">
+      <input type="reset" value="다시 작성">
+  </div>
+ </form>
+</div>
+
+</body>
+</html>
+<?php
+oci_free_statement($stid);
+oci_close($connect);
+?>

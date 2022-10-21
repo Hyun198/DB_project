@@ -1,0 +1,37 @@
+.sucess{
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-group button {
+    font-size: 25px;
+    font-style: bold;
+    border: 1px solid white; 
+    color: black; 
+    padding: 54px 60px;
+    cursor: pointer;
+    float: left;
+    border-radius: 3px;
+
+    position: relative;
+    top: -100px;
+    margin:auto;
+  }
+  a{
+    display: block;
+    padding: 18px 20px;
+    text-transform: uppercase;
+    text-decoration:none;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    background-color:white;
+    font-size: 24px;
+}
+
+a:hover {
+    color:#fff;
+    background: #111;
+}

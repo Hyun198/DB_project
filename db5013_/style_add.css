@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+    font-style: bold;
+}
+
+.wrap >h1 {
+    text-align:center;
+  }
+
+.submit {
+    text-align: center;
+}
+
+.wrap {
+    width:600px;
+    margin:0 auto;
+  
+    padding-top: 300px;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin:0px;
+    padding:0px;
+    color:black;
+  
+  }

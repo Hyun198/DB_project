@@ -1,0 +1,89 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin:0px;
+    padding:0px;
+    color:black;
+  
+  }
+  .nav{
+    display:flex;
+    line-height: 86px;
+    color:white;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 750px;
+    
+ }
+  
+  
+  .nav > li{
+    margin-right: 90px;
+    font-style: bold;
+    float: left;
+    
+  }
+  .wrap>h1{
+    text-align: center;
+    
+}
+.intro_bg{
+  background-image:url("image/food-delivery.png");
+  background:cover;
+  width:100%;
+  height: 1000px;
+  
+}
+.header{
+    display: flex;
+    justify-content: flex-end;
+    width: calc(1280px-300px);
+    height: 86px;
+    margin:auto;
+  }
+/*----------------버튼-----------------*/  
+  .btn-group .button {
+    background-color: slateblue; /* Green */
+    border: 1px solid grey;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+    display: block;
+  }
+  
+  .btn-group .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  .btn-group .button:hover {
+    background-color: #55288a;
+  }
+  /*--------------------네비-----------------*/
+ul {
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-left: 750px;
+}
+
+a{
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration:none;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color:#fff;
+    background: #111;
+}

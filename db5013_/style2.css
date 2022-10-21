@@ -1,0 +1,21 @@
+fieldset {
+    margin: 15px 10px;  /*상하 마진 15 좌우 마진 10*/
+    background-color: white;
+    padding: 5%;
+}
+
+fieldset > font{
+    font-size: 15px;
+    font-weight: bold;
+}
+fieldset > ul {
+    font-style: bold;
+}
+
+fieldset >label {
+    color: blue;
+}
+fieldset > legend {
+    text-align: center;
+    font-size: 30px;
+}

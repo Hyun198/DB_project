@@ -1,0 +1,215 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin:0px;
+    padding:0px;
+    color:black;
+  
+  }
+  
+.wrap{
+    text-align: center;
+}
+.wrap>h1{
+    font-size: 35px;
+    color: blue;
+    text-align: center;
+    
+}
+  .intro_bg{
+    background-image:url("image/food-delivery.png");
+    background:cover;
+    width: 2350px;
+    height: 1300px;
+    
+  }
+
+  .title{
+    width:100%;
+    margin:100px auto 100px auto;
+    text-align: center;
+    
+  
+  }
+  
+  
+  .intro_bg1{
+    
+    background:cover;
+    width:100%;
+    height:601px;
+    
+  }
+  
+  .background{
+    background-position: center;
+    width:100%;
+    height:601px;
+    background: #f1f2f3;
+  }
+  
+  
+  .header{
+    display: flex;
+    justify-content: flex-end;
+    width: calc(1280px-300px);
+    height: 86px;
+    margin:auto;
+    
+    
+  }
+  
+  .contents1{
+    font-size: 20px;
+    font-weight: thick;
+  }
+  
+  .nav{
+    display:flex;
+    line-height: 86px;
+    color:white;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 750px;
+    
+  }
+  
+  
+  .nav > li{
+    margin-right: 90px;
+    font-style: bold;
+    float: left;
+    
+  }
+  
+  .intro_text > h1,h4{
+    color:black;
+  }
+  .intro_text{
+    width:100%;
+    margin:231px auto 231px auto;
+    text-align: center;
+    
+  }
+  
+ 
+  
+  
+  
+ 
+/*---------------------버튼-------------------*/
+  .btn-group button {
+    font-size: 25px;
+    font-style: bold;
+  
+    border: 1px solid gray; 
+    color: black; 
+    padding: 54px 60px;
+    cursor: pointer;
+    float: left;
+    border-radius: 3px;
+
+    position: relative;
+    top: -100px;
+    margin:auto;
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none;
+  }
+  
+  .btn-group button:hover {
+    background-color: white;
+   
+  }
+  
+
+  .c button {width:25%}
+
+ /*--------------------네비-----------------*/  
+  .nav>ul {
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-left: 750px;
+  
+}
+
+a{
+    display: block;
+    padding: 18px 20px;
+    text-transform: uppercase;
+    text-decoration:none;
+    
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    background-color:white;
+    font-size: 24px;
+}
+
+a:hover {
+    color:#fff;
+    background: #111;
+}
+
+
+/*---------------드롭다운---------------------*/
+
+
+.dropdown-button {
+  display: block;
+  padding: 45px 20px;
+  background-color: white;
+  font-size: 24px;
+  font-weight: bold;
+  color:#333;
+  border:none;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background-color: white;
+  min-width:75px;
+  padding:7px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+  
+}
+
+.dropdown-content a{
+  color:black;
+  padding:11px 20px;
+  text-decoration: none;
+  display: block;
+  background-color: white;
+  font-size: 15px;
+  width: 110%;
+}
+.dropdown-content a:hover {
+    background-color: black; 
+    color:white;
+}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-button {
+    
+    background-color:black;
+    color:white;
+}

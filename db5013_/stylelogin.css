@@ -1,0 +1,53 @@
+*{
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin:0px;
+  padding:0px;
+  color:black;
+
+}
+.login {
+    width:600px;
+    margin:0 auto;
+    padding-top: 300px;
+
+  }
+  
+  fieldset > legend{
+    text-align: center;
+}  
+
+  fieldset {
+    margin: 15px 10px;  /*상하 마진 15 좌우 마진 10*/
+    background-color: white;
+    padding:5%;
+}
+
+fieldset legend{
+    font-weight: bold;
+    font-size: 18px;
+    color:black;
+}
+
+fieldset >div {
+  text-align: center;
+}
+
+.button {
+    text-align: center;
+    padding:5%;
+    font-size: larger;
+   
+}
+.intro{
+    font-size: 50px;
+    font-weight: bold;
+    height: 50px;
+    padding-top: 100px;
+    text-align: center;
+    margin:0 auto;
+    
+}
+
+
